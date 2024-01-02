@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Um site de exemplo do modulo de CSS" />
+    <meta name="keywords" content="Agencia Digital, CSS, HTML" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Agência Fake</title>
+</head>
+<body>
+    <!-- start header -->
+    <header class="header">
+        <div class="header-c wrapper">
+            <div class="logo">
+                <h1>Agência Fake</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#servicos">Serviços</a>
+                    </li>
+                    <a href="#" class="btn primary" >Fale Conosco</a>
+                </ul>
+            </nav>
+            <button onclick="antionMenu()" id="toggle">
+                <span class="row"></span>
+                <span class="row"></span>
+                <span class="row"></span>
+            </button>
+        </div>
+    </header>
+    <nav class="navbar-mobile" id="navbar-mobile">
+        <ul>
+            <li>
+                <a onclick="antionMenu()" href="#">Home</a>
+            </li>
+            <li>
+                <a onclick="antionMenu()" href="#sobre">Sobre nós</a>
+            </li>
+            <li>
+                <a onclick="antionMenu()" href="#servicos">Serviços</a>
+            </li>
+            <a onclick="antionMenu()" href="#" class="btn primary" >Fale Conosco</a>
+        </ul>
+    </nav>
+    <!-- end header -->
+    <!-- start sobre -->
+    <section class="sobre" id="sobre">
+        <div class="sobre-c wrapper">
+            <div class="sobre-text">
+                <h3>você achou a melhor</h3>
+                <h2>Agência <br /> Digital</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, magnam rem unde laborum temporibus cum repellendus laudantium eius veritatis consequatur quod veniam, voluptates voluptate alias aliquam fugiat itaque cumque quia.</p>
+                <a href="#" class="btn secundary">Contrate agora</a>
+            </div>
+            <div class="sobre-image">
+                <img src="image/hero_right.png" alt="Agencia Fake" />
+            </div>
+        </div>
+    </section>
+    <!-- end sobre -->
+    <!-- start servicos -->
+    <section id="servicos" class="servicos">
+        <h2>O que podemos fazer pelo seu negócio?</h2>
+        <div class="servicos-c wrapper">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="image/pc.png" alt="pc" />
+                    </div>
+                    <h1 class="card-title">Desenvolvimento de Sites</h1>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A delectus placeat ipsa, distinctio debitis obcaecati id atque reprehenderit similique error ut, tempore dolore enim dolorem quibusdam veniam veritatis voluptatibus quod?
+                    </p>
+                </div>
+                <div class="texto-oculto">
+                    <h1 class="texto-oculto__title">Outro texto</h1>
+                    <p class="texto-oculto__description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam nemo dicta, dolores ab libero unde vitae illum reprehenderit suscipit aliquid deleniti asperiores? Optio nesciunt dolores eligendi delectus est voluptatem architecto.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end servicos -->
+</body>
+</html>
