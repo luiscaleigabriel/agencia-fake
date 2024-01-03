@@ -51,6 +51,7 @@ p {
     width: 100%;
     display: flex;
     padding: 10px 4%;
+    margin: 0 auto;
 }
 
 .btn {
@@ -175,8 +176,8 @@ p {
     }
 
     .navbar-mobile {
-        position: absolute;
-        width: 70%;
+        position: fixed;
+        width: 100%;
         height: 100vh;
         top: 100px;
         right: 0;
@@ -205,12 +206,6 @@ p {
 
     .openMenu {
         display: block;
-    }
-}
-
-@media (max-width: 344.9px) {
-    .navbar-mobile {
-        width: 80%;
     }
 }
 
@@ -296,15 +291,22 @@ p {
 }
 
 .servicos-c {
+    padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
 .card {
+    display: inline-block;
+    width: 30%;
     padding: 20px;
-    width: 32.5%;
-    border-radius: 10px;
-    text-align: center;
+    margin: 1%;
     border: 1px solid var(--cor0);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: .2s ease-in-out;
 }
 
 .card-image {
@@ -312,10 +314,10 @@ p {
     margin: 0 auto;
 }
 
-.card-title {
+.card-title, .texto-oculto__title {
     font-family: var(--font0);
     color: var(--cor3);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 20px 0;
 }
 
@@ -323,3 +325,65 @@ p {
     display: none;
 }
 
+.card:hover {
+    background: #FF2978;
+    color:white;
+    padding:40px;
+}
+
+.card:hover .card-image {
+    display: none;
+}
+
+.card:hover .card-text {
+    display: none;
+}
+
+.card:hover .texto-oculto,.card:hover .texto-oculto__title {
+    display: block;
+    color: var(--cor4);
+}
+
+@media (max-width: 920.9px) {
+    .card {
+        width: 34%;
+    }
+}
+
+@media (max-width: 700.9px) {
+    .card {
+        width: 70%;
+    }
+}
+
+/*fale-conosco
+----------------------------------------------------------*/
+#fale {
+    display: block;
+    width: 80px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+
+@media (max-width: 920.9px) {
+    #fale  {
+        display: none;
+    }
+}
+
+/*footer
+----------------------------------------------------------*/
+.footer {
+    width: 100%;
+    color: var(--cor4);
+    padding: 100px 0;
+    text-align: center;
+    border-top: 6px solid var(--cor0);
+    background: linear-gradient(to bottom, var(--cor1), var(--cor2), var(--cor3));
+}
+
+.footer .logo {
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
